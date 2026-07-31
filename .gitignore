@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+# 各電腦保留自己的資料庫與輸出，不進版本庫
+wms_system_v3.db
+printouts/
+return_evidence/
+table_layouts.json

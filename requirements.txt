@@ -1,0 +1,10 @@
+# 桌面版必要套件
+ttkbootstrap
+
+# --- 選配 ---
+# Windows 熱感貼紙機 RAW/TSPL 直接輸出（macOS/Linux 走內建 lp 指令，不需安裝）
+# pywin32
+
+# REST API 模式（api/server.py）需要時再安裝：
+# fastapi
+# uvicorn
