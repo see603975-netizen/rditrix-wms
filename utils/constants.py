@@ -16,14 +16,21 @@ import secrets
 import shutil
 import sqlite3
 import subprocess
-import tkinter as tk
 import webbrowser
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from tkinter import filedialog, messagebox
 
-import ttkbootstrap as tb
-from ttkbootstrap.constants import BOTH, CENTER, END, EW, LEFT, RIGHT, W, X, Y
+try:
+    import tkinter as tk
+    from tkinter import filedialog, messagebox
+
+    import ttkbootstrap as tb
+    from ttkbootstrap.constants import BOTH, CENTER, END, EW, LEFT, RIGHT, W, X, Y
+except ImportError:
+    # 雲端 API 環境沒有圖形介面，Tkinter 不存在屬正常，
+    # 只有桌面版 UI 會用到 tk / tb，API 模式不需要。
+    tk = None
+    tb = None
 
 
 APP_VERSION = "Rditrix WMS Lite V6.9"
