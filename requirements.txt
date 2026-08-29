@@ -6,5 +6,5 @@ ttkbootstrap
 # pywin32
 
 # REST API 模式（api/server.py）需要時再安裝：
-# fastapi
-# uvicorn
+fastapi
+uvicorn
